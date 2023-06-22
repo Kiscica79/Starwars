@@ -10,6 +10,7 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
     public void hiperUgras() {
         Random random = new Random();
         setSebesseg(getSebesseg() + random.nextInt(0, 101));
+        System.out.println(getSebesseg());
     }
 
     @Override
@@ -17,10 +18,6 @@ public class XWing extends LazadoGep implements Hiperhajtomu {
         return isMeghibasodhatE() && getSebesseg() < 1000;
     }
 
-    @Override
-    public String toString() {
-        return "XWing{}" + super.toString();
-    }
 
 
 }

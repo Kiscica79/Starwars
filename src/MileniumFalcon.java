@@ -20,5 +20,10 @@ public class MileniumFalcon implements Urhajo, Hiperhajtomu {
         return this.tapasztalat * 2;
     }
 
-
+    @Override
+    public String toString() {
+        return "MileniumFalcon{" +
+                "tapasztalat=" + tapasztalat +
+                '}';
+    }
 }
